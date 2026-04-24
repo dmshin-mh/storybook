@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { ChevronDownIcon, LogOutIcon, SettingsIcon } from 'lucide-react';
+import { LogOutIcon, SettingsIcon } from 'lucide-react';
 
 import { buttonVariants } from '@/components/ui/button';
 import {
@@ -37,7 +37,6 @@ export const UserProfile: Story = {
 				className={cn(buttonVariants({ variant: 'outline-gray', size: 'sm' }))}
 			>
 				김상담님
-				<ChevronDownIcon className="size-4 transition-transform" />
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align="end" className="w-40">
 				<DropdownMenuItem>
@@ -62,7 +61,6 @@ export const DefaultStyle: Story = {
 				className={cn(buttonVariants({ variant: 'default', size: 'md' }))}
 			>
 				메뉴 열기
-				<ChevronDownIcon className="size-4" />
 			</DropdownMenuTrigger>
 			<DropdownMenuContent>
 				<DropdownMenuItem>항목 1</DropdownMenuItem>
